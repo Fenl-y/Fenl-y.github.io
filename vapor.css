@@ -1,0 +1,61 @@
+body {
+    background-color: #000000;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px #ff0080;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    color: #ff0080;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #0000ff;
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #ff0080;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url("vaporwavebaground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Add some hover effect on links */
+a:hover {
+    color: #ff0080;
+    text-shadow: 2px 2px #0000ff;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Add some animation on text */
+h1, h2, h3, h4, h5, h6, p {
+    animation: neon 1s ease-in-out infinite alternate;
+}
+
+/* Keyframe animation for neon effect */
+@keyframes neon {
+    from {
+        text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ff0080, 0 0 70px #ff0080, 0 0 80px #ff0080, 0 0 100px #ff0080, 0 0 150px #ff0080;
+    }
+    to {
+        text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 20px #ff0080, 0 0 35px #ff0080, 0 0 40px #ff0080, 0 0 50px #ff0080, 0 0 75px #ff0080;
+    }
+}
